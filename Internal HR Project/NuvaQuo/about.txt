@@ -1,0 +1,10 @@
+Front Page paragraph:
+Welcome to our NuvaQuo-Pdf search application! Our platform allows you to easily search through a directory of PDF files 
+and find the ones that contain the skills you're looking for.With a simple user interface and efficient search algorithm,
+you'll be able to save time and find the PDFs you need in no time.
+
+To Unleash the power of resume search click below.
+
+
+
+slogan : Your one-stop solution for resume search

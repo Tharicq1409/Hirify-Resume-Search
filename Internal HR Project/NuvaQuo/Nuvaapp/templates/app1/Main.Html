@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="icon" href="/docs/5.1/assets/img/favicons/favicon-32x32.png" sizes="32x32" type="image/png">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href=
+"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Welcome to Hirify !</title>
+
+    {% load static %} <!--static files syntax-->
+    <link rel="stylesheet" href="{% static 'css/Main.css' %}">
+  </head>
+  
+  <body>
+<!-- 
+    <div class="spinner-wrapper">
+      <div class="spinner-grow text-success" role="status">
+        <div class="spinner-grow text-info" role="status" style="width: 40px; ">
+          <div class="spinner-grow text-primary" role="status" style="width: 20px;">
+          </div>
+        </div>
+      </div>
+    </div> -->
+   
+   <nav class="navbar navbar-expand-lg navbar-light static-top" style="background-color: #00cc44;">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <img src="{% static 'images/HIRIFY logo.png' %}" alt="..." height="55">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Dropdown
+              </a>
+              <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container_nobt">
+      <div id="content_nobt">
+        <p style="font-family:Georgia;font-size: small;">Welcome to our Hirify-Resume search application! Our platform allows you to easily search through a directory of Resumes 
+          and find the ones that contain the skills you're looking for.With a simple user interface and efficient search algorithm,
+          you'll be able to save time and find the Resumes you need in no time.
+          To Unleash the power of resume search click "Get Started"</p><br>
+        </div>
+        <a href="sample.html" class="btn_link">Get Started</a> 
+      </div>
+      
+
+
+    <div class="blockcode">
+     
+    
+      <footer class="page-footer shadow bg-dark" >
+        <div class="d-flex flex-column mx-auto py-5" style="width: 80%">
+          <div class="d-flex flex-wrap justify-content-between">
+            <div>
+              <a href="/" class="d-flex align-items-center p-0 text-dark">
+                <img alt="logo" src="{% static 'images/1600x960_1288177-3i-infotech-limited.jpg' %}" width="30px" />
+                <span class="ms-3 h5 font-weight-bold text-success">Nure Park</span>
+              </a>
+              <p class="my-3 text-light" style="width: 250px">
+                We are creating High Quality Resources and tools to Aid developers during the
+                developement of their projects
+              </p>
+              <span class="mt-4">
+                <button class="btn btn-light btn-flat p-2 ">
+                  <i class="fa fa-facebook"></i>
+                </button>
+                <button class="btn btn-light btn-flat p-2">
+                  <i class="fa fa-instagram"></i>
+                </button>
+                <button class="btn btn-light btn-flat p-2">
+                  <i class="fa fa-linkedin"></i>
+                </button>
+              </span>
+            </div>
+            <div>
+              <p class="h5 mb-4 text-success" style="font-weight: 600">3i infotech</p>
+              <ul class="p-0" style="list-style: none; cursor: pointer">
+                <li class="my-2">
+                  <a class="text-light" href="/">Resources</a>
+                </li>
+                <li class="my-2">
+                  <a class="text-light" href="/">About Us</a>
+                </li>
+                <li class="my-2">
+                  <a class="text-light" href="/">Contact</a>
+                </li>
+                <li class="my-2">
+                  <a class="text-light" href="/">Blog</a>
+                </li>
+              </ul>
+            </div>
+            <div>
+              <p class="h5 mb-4 text-success" style="font-weight: 600">Help</p>
+              <ul class="p-0" style="list-style: none; cursor: pointer">
+                <li class="my-2">
+                  <a class="text-light" href="/">Support</a>
+                </li>
+                <li class="my-2">
+                  <a class="text-light" href="/">Sign Up</a>
+                </li>
+                <li class="my-2">
+                  <a class="text-light" href="/">Sign In</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <small class="text-center mt-5 text-light">&copy; 3i Infotech, 2020. All rights reserved.</small>
+        </div>
+      </footer>
+    </div>
+   
+      <script>
+          const spinnerel =document.querySelector('.spinner-wrapper');
+          window.addEventListener('load',() =>{
+            spinnerel.style.opacity ='0';
+
+            setTimeout(() => {
+              spinnerel.style.dispaly ='none';
+
+            },200);
+          });
+
+      </script>
+  </body>
+</html>

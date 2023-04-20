@@ -1,0 +1,27 @@
+<html>
+<head>
+    <title>PDF Search</title>
+</head>
+<body>
+    <h1>PDF Search</h1>
+    <form method="POST">
+        {% csrf_token %}
+        <label for="search_term">Enter a skill to search:</label>
+        <input type="text" name="search_term" id="input">
+        <input type="submit" value="Search" onclick="printvalue()">
+    </form>
+    {% if results %}
+        <p id="output"></p> 
+        <h2>Your Result for {{ search_term }} Skill Containing Resumes</h2>
+        <h2>Search results:</h2>
+        <ul>
+            {% for result in results %}
+                <!--<li>{{ result }}</li>-->
+                <li><a href="{{ result.0 }}">{{ result.1 }}</a></li>
+            {% empty %}
+                <li>No results found.</li>
+            {% endfor %}
+        </ul>
+    {% endif %}
+</body>
+</html>

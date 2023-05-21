@@ -1,0 +1,36 @@
+<!--This is a testing HTML Page-->
+
+<!--Html code for 3 search terms-->
+<html>
+
+<head>
+    <title>demo</title>
+</head>
+
+<body>
+    <h1>PDF Search</h1>
+    <form method="POST">
+        {% csrf_token %}
+        <label for="search_term1">Enter the first search term:</label>
+        <input type="text" name="search_term1" id="input">
+        <br>
+        <label for="search_term2">Enter the second search term:</label>
+        <input type="text" name="search_term2" id="input">
+        <br>
+        <label for="search_term3">Enter the second search term:</label>
+        <input type="text" name="search_term3" id="input">
+        <input type="submit" value="Search">
+    </form>
+    {% if results %}
+    <h2>Search results for "{{ search_term1 }}" and "{{ search_term2 }}" and "{{ search_term3 }}":</h2>
+    <ul>
+        {% for result in results %}
+        <li><a href="{{ result.0 }}">{{ result.1 }}</a></li>
+        {% empty %}
+        <li>No results found.</li>
+        {% endfor %}
+    </ul>
+    {% endif %}
+</body>
+
+</html>

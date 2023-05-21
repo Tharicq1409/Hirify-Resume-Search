@@ -22,7 +22,7 @@ def search_result(request):
             #results = search_pdfs('C:/Users/3iintr00203/Desktop/resumes/perfect resumes', search_term)
     return render(request, 'app1/sample.html', {'results': results,'search_term':search_term})'''
 
-#updated code to search 3 terms
+#updated code to search 3 terms may 21 2023
 def search_result(request):
     results = []
     search_term1 = ''

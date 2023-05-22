@@ -24,4 +24,5 @@ def search_pdfs(root_dir, search_term):
                         print(f"Found '{search_term}' in {file_name}")
                         results.append(file_name)
     # Return list of matching file paths with each file path printed only once
-    return list(set(results))'''               
+    return list(set(results))
+'''               
